@@ -1,6 +1,6 @@
 (function () {
-  emailjs.init("to9PlFrMMimgruuH0");
-  // emailjs.init("BnRoAjGd5ec2E2VQn");
+  // emailjs.init("to9PlFrMMimgruuH0"); // DIGIN
+  emailjs.init("BwX8mmKlFidsWvP67"); // HARSH
 })();
 
 // Get IP Address
@@ -23,8 +23,9 @@ const handleFormSubmit = async (formId, nameField, emailField, phoneField) => {
     user_email: document.getElementById(emailField).value,
     contact_number: document.getElementById(phoneField).value,
     ip_address: await getIpAddress(),
-
-    to_email: "support@shreejiinfinity.com",
+    website_url: window.location.href,
+    // to_email: "harsh.autowebbed@gmail.com",
+    to_email: "zaminahmed303@gmail.com",
     company_name: "Shreeji Infinity",
   };
 
@@ -49,7 +50,7 @@ const handleFormSubmit = async (formId, nameField, emailField, phoneField) => {
 window.onload = function () {
   document
     .getElementById("contact-form")
-    .addEventListener("submit", function (event) {
+    ?.addEventListener("submit", function (event) {
       event.preventDefault();
       handleFormSubmit(
         "contact-form",
@@ -61,7 +62,7 @@ window.onload = function () {
 
   document
     .getElementById("contact-form-modal")
-    .addEventListener("submit", function (event) {
+    ?.addEventListener("submit", function (event) {
       event.preventDefault();
       handleFormSubmit(
         "contact-form-modal",

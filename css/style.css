@@ -134,12 +134,27 @@ html {
 
 .carousel-item img {
   /* min-height: 80vh; */
-  max-height: 80vh;
+  max-height: 90vh;
   width: 100% !important;
 }
 
 .carousel-indicators .active {
   background-color: var(--colorSecondary) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-item .banner1 {
+    content: url("../img/banner/mobile-banner01.jpg");
+  }
+  .carousel-item .banner2 {
+    content: url("../img/banner/mobile-banner02.jpg");
+  }
+  .carousel-item .banner3 {
+    content: url("../img/banner/mobile-banner03.jpg");
+  }
+  .carousel-item .banner4 {
+    content: url("../img/banner/mobile-banner04.jpg");
+  }
 }
 
 /* Overview */
